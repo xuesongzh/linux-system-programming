@@ -1,0 +1,4 @@
+kill -HUP 10257
+kill -INT 10257
+kill -QUIT 10257
+kill -USR1 10257

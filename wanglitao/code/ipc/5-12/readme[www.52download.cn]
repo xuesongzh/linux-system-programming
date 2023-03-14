@@ -1,0 +1,4 @@
+usage:
+	$ ./client
+	$ input client ID :
+	support >3 clients
