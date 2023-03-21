@@ -9,7 +9,7 @@
 *************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-
+//执行顺序与注册顺序相反
 static void exit_process1 (void)
 {
 	printf ("exit process func1\n");

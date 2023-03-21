@@ -10,12 +10,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+//fork-先父进程后子进程
+//vfork-先子进程后父进程,在子进程调用exec之前，将暂停执行父进程
 int main (void)
 {
 	int ret_from_fork;
 	
-	ret_from_fork = vfork ();
+	ret_from_fork = vfork();
 
 	if (ret_from_fork == -1)
 	{

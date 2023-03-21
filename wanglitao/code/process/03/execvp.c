@@ -17,12 +17,11 @@ int child_process (int argc, char *argv[])
 	int i;
 	int ret_from_exec;
 
-	printf ("mini shell:#");
+	printf ("mini shell:#\n");
 
 	for (i = 0; i < argc; i++)
 		arglist[i] = argv[i+1];
 	arglist[i] = NULL;
-	printf ("\n");
 	//printf ("hello\n");
 	ret_from_exec = execvp (arglist[0], arglist);
 	if (ret_from_exec == -1)

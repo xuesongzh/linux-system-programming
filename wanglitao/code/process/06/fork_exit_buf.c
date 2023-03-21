@@ -10,7 +10,8 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+//exit 会刷新缓冲区
+//_exit 不会刷新缓冲区
 int main (void)
 {
 	printf ("hello world!\n");
