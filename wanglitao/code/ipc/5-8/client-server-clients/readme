@@ -1,0 +1,7 @@
+usages:
+	eg: client1 sent "hello" to client2
+	process1: 2hello
+
+text structure in server FIFO:
+    sentID receiverID text
+	12hello

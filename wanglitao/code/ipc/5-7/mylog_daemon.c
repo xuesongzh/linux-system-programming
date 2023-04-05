@@ -38,12 +38,12 @@ int main(void) {
     int read_len;
     while (1) {
         read_len = read(fifo_fd, public_buf, 100);
-        if (read_len == -1)
-            handle_error("read") else if (read_len > 0) {
-                printf("%s\n", public_buf);
-                write(fd, public_buf, strlen(public_buf));
-            }
-        else {
+        if (read_len == -1) {
+            handle_error("read");
+        } else if (read_len > 0) {
+            printf("%s\n", public_buf);
+            write(fd, public_buf, strlen(public_buf));
+        } else {
             sleep(3);
             continue;
         }
